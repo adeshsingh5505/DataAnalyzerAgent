@@ -11,13 +11,12 @@ import docx
 
 together.api_key = st.secrets["TOGETHER_API_KEY"]
 
-def ask_together(prompt: str, model="meta-llama/Llama-3-8B-Instruct"):
+def ask_together(prompt: str, model="meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8"):
     response = together.Complete.create(
         model=model,
         prompt=prompt,
         max_tokens=512,
-        temperature=0.7,
-        stop=["</s>"]
+        temperature=0.7
     )
     return response['output']['choices'][0]['text'].strip()
 
@@ -59,7 +58,7 @@ uploaded_file = st.file_uploader(
 
 if uploaded_file:
     ext = uploaded_file.name.split('.')[-1].lower()
-    
+
     st.subheader("📄 Preview Extracted Text")
     text = extract_text(uploaded_file)
     st.text(text[:3000])
