@@ -1,13 +1,9 @@
-# requirements.txt
-
 streamlit
 pandas
-numpy
 altair
-openpyxl
-python-docx
-pdfplumber
-Pillow
 pytesseract
-transformers>=4.51.0
-torch
+Pillow
+together
+python-docx
+PyMuPDF
+openpyxl
