@@ -1,9 +1,8 @@
 streamlit
-pandas
-altair
-pytesseract
-Pillow
 together
-python-docx
-PyMuPDF
-openpyxl
+PyPDF2
+pytesseract
+pandas
+matplotlib
+seaborn
+Pillow
