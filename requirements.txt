@@ -1,8 +1,13 @@
+# requirements.txt
+
 streamlit
-together
-PyPDF2
-pytesseract
 pandas
-matplotlib
-seaborn
+numpy
+altair
+openpyxl
+python-docx
+pdfplumber
 Pillow
+pytesseract
+transformers>=4.51.0
+torch
